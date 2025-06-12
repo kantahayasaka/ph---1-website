@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../ph1-website"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ph1-website",
+		"liveServer.settings.port": 5501
+	}
+}
