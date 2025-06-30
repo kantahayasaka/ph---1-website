@@ -40,7 +40,7 @@
  */
 body {
   color: #333333;
-  background-color:azure;
+  background-color:#ffffff;
   font-family:'Noto Sans JP';
 }
 /**
@@ -290,6 +290,171 @@ li{
 /**
  * 2.6 - 日常生活
  */
+.activity{
+  height:200vh;
+  position:relative;
+
+}
+
+p:nth-of-type(2){
+  color: cornflowerblue;
+}
+p:nth-of-type(3){
+  text-align: center;
+}
+.activity-head{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+p:nth-child(1){
+  font-size: 40px;
+  font-weight:bold;
+}
+.activity-head p{
+  margin-bottom: 20px;
+}
+div p:nth-of-type(2){
+  font-weight: bold;
+}
+.activity-head-3{
+ margin-top: 20px;
+}
+.activity-main-1{
+  background-color:azure;
+  width:700px;
+  height:210px;
+  padding-left: 50px;
+  padding-top: 28px;
+  position: absolute;
+  top: 100px;
+}
+.activity-ul-1{
+  margin-top: 10px;
+}
+.activity-main-1 div{
+  margin-top:10px;
+  font-size: 13px;
+}
+.activity-list-1{
+ display: flex;
+ justify-content: center;
+
+}
+.activitymain{
+  position: relative;
+}
+.MU-img img{
+  height: 220px;
+  position: absolute;
+  top: 50px;
+  margin-top: 18px;
+  margin-left: 70px;
+  border-radius: 10px;
+}
+h1::before{
+  content:"01";
+  font-size: 50px;
+  font-weight: bold;
+  color:cornflowerblue;
+}
+.activity-main-1 li:nth-child(-n+2)::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon-check.svg');
+    background-position: center;
+    background-size: contain;
+}
+.activity-list-2{
+  display:flex;
+  justify-content:center ;
+}
+.activity-main-2{
+  background-color:azure;
+  width:700px;
+  height:210px;
+  padding-left: 330px;
+  padding-top: 33px;
+  position: absolute;
+  top: 650px;
+}
+.activity-main-2 h1::before{
+  content:"02";
+  font-size: 50px;
+  color:cornflowerblue;
+  font-weight:bold;
+}
+.tatemoku-img img{
+  height: 220px;
+  position: absolute;
+  top: 600px;
+  left:250px;
+  margin-top: 18px;
+  margin-left: -10px;
+  border-radius: 10px;
+}
+.activity-main-2 li:nth-of-type(1)::before{
+  content:"";
+  display:inline-block;
+  width:15px;
+  height:15px;
+  background-image: url('./icon-check.svg');
+  background-position: center;
+  background-size: contain;
+
+}
+.activity-ul-2{
+  padding-bottom:10px;
+  padding-top: 10px;
+}
+.activity-main-2 div{
+  font-size:13px ;
+}
+.activity-list-3{
+  display: flex;
+  justify-content: center;
+}
+.activity-main-3{
+  background-color:azure;
+  width:700px;
+  height:210px;
+  padding-left: 50px;
+  padding-top: 28px;
+  position: absolute;
+  top: 980px;
+}
+.yokomoku-img img{
+  height: 220px;
+  position: absolute;
+  top: 930px;
+  margin-top: 18px;
+  margin-left: 90px;
+  border-radius: 10px;
+  
+}
+.activity-main-3 li::before{
+ content:'';
+ display:inline-block;
+ width:15px;
+ height:15px;
+ background-image:url('./icon-check.svg');
+ background-position: center;
+ background-size: contain;
+}
+.activity-main-3 h1::before{
+  content:'03';
+  font-size:50px;
+  color:cornflowerblue;
+  font-weight:bold;
+}
+.activity-main-3 div{
+  font-size: 13px;
+}
+.activity-main-3{
+  row-gap: 50px;
+}
 
 /**
  * 2.7 - 公式LINE
