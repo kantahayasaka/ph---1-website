@@ -195,25 +195,26 @@ body {
   font-weight:bold;
   margin-top:10px;
 }
-.aboutposse-body{
-  display: flex;
-  justify-content: center;
-}
 .aboutposse-bodymain{
   display: grid;
-  grid-template-columns: 500px 540px;
-  grid-template-rows: 100px 100px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 80px;
   position: absolute;
-  bottom: 220px;
+  top: 200px;
+  left:50px;
+  transform: translate(-50% -50%);
+  
 }
 .aboutposse-text{
-  margin-left:40px;
-  padding-top:90px;
-  font-weight: bold;
-  font-size: 16px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+
 }
 .aboutposse-img{
-  width:500px;
+  object-fit: fill;
+  grid-column: 1/2;
+  grid-row: 1/4;
   border-radius:20px;
   
 }
@@ -346,12 +347,15 @@ div p:nth-of-type(2){
 .activitymain{
   position: relative;
 }
-.MU-img img{
+.MU-img {
   height: 220px;
   position: absolute;
   top: 50px;
+  left: 650px;
   margin-top: 18px;
   margin-left: 70px;
+}
+.MU-img img{
   border-radius: 10px;
 }
 h1::before{
