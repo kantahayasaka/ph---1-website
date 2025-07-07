@@ -150,19 +150,19 @@ body {
   font-weight: bold;
   border-radius:25px;
 }
-.mainvisual-scroll{
+.mainvisual-scroll p:nth-of-type(1){
   position:absolute;
-  bottom:5px;
+  bottom:4px;
   right: 2px;
   color:aliceblue;
-
+  font-size: 15px;
   
 }
-.mainvisual-scroll:before{
+.mainvisual-scroll::before{
   position:absolute;
   color:aliceblue;
   content:"●";
-  font-size: 10px;
+  font-size: 15px;
   bottom:3px;
   right: 112px;
 }
@@ -197,12 +197,12 @@ body {
 }
 .aboutposse-bodymain{
   display: grid;
-  grid-template-columns: 600px 600px;
+  grid-template-columns: 600px 500px;
   grid-template-rows: 1fr 1fr 1fr;
   column-gap: 80px;
   position: absolute;
   top: 200px;
-  left:50px;
+  left:5%;
   transform: translate(-50% -50%);
   
 }
@@ -260,7 +260,7 @@ body {
   margin-right:10px;
   display:flex;
   flex-direction:column;
-  text-align: center;
+  align-items: center;
 
 }
 ul{
@@ -270,13 +270,13 @@ li{
   list-style: none;
 }
 .event-bodymain-2{
+  text-align: center;
   color: #ffffff;
   background-color:dodgerblue;
   width: 150px;
   padding:10px;
   border-radius: 50px;
   margin-top: 15px;
-  margin-left: 50px;
   font-weight: bold;
 }
 .event-bodymain-3{
@@ -320,6 +320,9 @@ div p:nth-of-type(2){
 }
 .activity-head-3{
  margin-top: 20px;
+ display: inline-block;
+ width: 980px;
+ 
 }
 .activity-main-1{
   background-color:azure;
@@ -347,6 +350,7 @@ div p:nth-of-type(2){
 .activitymain{
   position: relative;
 }
+
 .MU-img {
   height: 220px;
   position: absolute;
