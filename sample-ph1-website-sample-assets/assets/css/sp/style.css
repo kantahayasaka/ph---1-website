@@ -77,7 +77,7 @@
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 1fr 200px;
   column-gap:0px;
-  row-gap:20px;
+  row-gap:40px;
   top: 200px;
   left:100px;
   transform: translate(-50% -50%);
@@ -144,18 +144,34 @@
   gap: 50px;
  }
  .activity-main-2{
+  width:660px;
  }
+
  .activity{
   height:130vh;
   position:relative;
  }
  .activity-main-1{
   position: absolute;
-  top: 10%;
+  top: 100px;
  }
  .MU-img{
-  
+  display: flex;
+  width: 330px;
+  height:220px;
+  margin: 0px;
+  position: absolute;
+  margin-left:-220px;
+  margin-top:10px;
  }
+ .MU-img img{
+
+ }
+ .tatemoku-img img{
+  left:20px;
+  margin-left: 0px;
+ }
+
 }
 
 
@@ -178,4 +194,3 @@
   /**
   * 3.2 - スライダー
   */
-
