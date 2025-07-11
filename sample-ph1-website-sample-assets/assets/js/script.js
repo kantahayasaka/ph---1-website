@@ -18,3 +18,9 @@ const button =document.getElementById('button');
 button.addEventListener('click',function(){
       console.log('こんにちは');
 })
+const hun = document.getElementById('button');
+hun.addEventListener('click',function(){
+      const header = document.getElementById("header");
+      header.classList.toggle("is-open");
+});
+ 
