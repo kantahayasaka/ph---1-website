@@ -23,4 +23,12 @@ hun.addEventListener('click',function(){
       const header = document.getElementById("header");
       header.classList.toggle("is-open");
 });
- 
+const mainvisual= document.getElementById('mainvisual');
+window.addEventListener("scroll",function(){
+      const window1 =document.getElementById("header");
+      window1.classList.add("is-scroll");
+      const window2 =document.getElementById("header");
+      if(window.scrollY >= mainvisual.clientHeight - header.clientHeight){
+            window2.classList.remove("is-scroll");
+      }
+});
