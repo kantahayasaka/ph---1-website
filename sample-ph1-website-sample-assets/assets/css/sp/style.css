@@ -181,6 +181,9 @@
   .header.is-open span:not(span:nth-of-type(2)){
      background-color: skyblue;
   }
+  .header.is-open .img-logo{
+    filter: brightness(100%);
+  }
 }
   /**
   * 2.2 - フッター
@@ -192,7 +195,7 @@
 @media(max-width:768px){
   .mainvisual{
     height:40vh;
-    background-size: contain;
+    background-size: 100%;
   }
 }
   /**
@@ -261,6 +264,12 @@
 @media(max-width:768px){
   .event-body{
    margin-left: 10px;
+  }
+}
+@media(max-width:768px){
+  .splide{
+    height:80vh;
+    overflow-x: hidden;
   }
 }
   /**

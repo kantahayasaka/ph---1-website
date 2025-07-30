@@ -32,3 +32,24 @@ window.addEventListener("scroll",function(){
             window2.classList.remove("is-scroll");
       }
 });
+addEventListener('DOMContentLoaded', function(){
+      new Splide('.splide',{
+            type: 'loop',
+            perPage: 3,
+            focus:0,
+            padding: { left :28, right: 28},
+            width:1096,
+            breakpoints:{
+                  768:{
+                        perPage:1,
+                        pagination:true,
+                  },
+                  1440:{
+                        pagination:false,
+                  },
+                     
+            },
+      }).mount();
+});
+
+

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ph1 POSSE課題</title>
   <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/sp/style.css" />
 </head>
@@ -69,7 +70,7 @@
       </div>
     </div>
   </section>
-  <section class="event">
+  <section class="splide" aria-label="Splideの基本的なHTML" id="splide">
    <div class="event-head">
      <div class="event-headmain">
       <p class="event-head1">イベント</p>
@@ -78,26 +79,28 @@
       </p>
      </div>
    </div>
-   <div class="event-body">
-     <ul class="event-bodymain">
-      <li><img src="./assets/img/img-event01.jpg" class="event-body-img"></li>
-      <li class="event-bodymain-2">may</li>
-      <li class="event-bodymain-3">入学式</li>
-     </ul>
-     <ul class="event-bodymain">
-      <li><img src="./assets/img/img-event02.jpg" class="event-body-img"></li>
-      <li class="event-bodymain-2">june</li>
-      <li class="event-bodymain-3">ハッカソン</li>
-     </ul>
-     <ul class="event-bodymain">
-      <li><img src="./assets/img/img-event03.jpg" class="event-body-img"></li>
-      <li class="event-bodymain-2">may</li>
-      <li class="event-bodymain-3">課題サポート会</li>
-     </ul>
-     <ul class="event-bodymain">
-      <li><img src="./assets/img/img-event04.jpg" class="event-body-img"></li>
-      <li class="event-bodymain-2">march-may</li>
-      <li class="event-bodymain-3">チーム開発</li>
+   <div class="splide__track">
+     <ul class="splide__list">
+      <li class="splide__slide">
+      <img src="./assets/img/img-event01.jpg" class="event-body-img">
+      <p class="event-date">may</p>
+      <p class="event-name">入学式</p>
+      </li>
+      <li class="splide__slide">
+      <img src="./assets/img/img-event02.jpg" class="event-body-img">
+      <p class="event-date">june</p>
+      <p class="event-name">ハッカソン</p>
+      </li>
+      <li class="splide__slide">
+      <img src="./assets/img/img-event03.jpg" class="event-body-img">
+      <p class="event-date">may</p>
+      <p class="event-name">課題サポート会</p>
+      </li>
+      <li class="splide__slide">
+      <img src="./assets/img/img-event04.jpg" class="event-body-img">
+      <p class="event-date">march-may</p>
+      <p class="event-name">チーム開発</p>
+      </li>
      </ul>
    </div>
   </section>
@@ -190,6 +193,7 @@
  </div>
 </footer>
 <script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 
 </html>
