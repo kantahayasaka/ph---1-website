@@ -100,7 +100,7 @@ body {
   }
 
 .header.is-scroll .img-logo{
-  filter: brightness(400%);
+  filter: brightness(500%);
 }
 .header.is-scroll .header-img{
   filter:brightness(100%);
@@ -140,10 +140,10 @@ body {
  * 2.3 - メインビジュアル
  */
 .mainvisual{
-  height: 140vh;
+  height: 100vh;
   background-image:url(../img/bg-mainvisual.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   position:relative;
   
 }
@@ -246,10 +246,11 @@ body {
 /**
  * 2.5 - イベント
  */
-.event{
+.splide{
   height:100vh;
   position:relative;
   margin-top:80px;
+ 
 }
 .event-head{
   display:flex;
@@ -275,18 +276,26 @@ body {
 .event-head3{
   margin-top:40px;
 }
-.event-body{
-  margin-top:250px;
-  display: flex;
-  justify-content:center;
 
+.event-body-img{
+  width:250px;
+  border-radius:10px;
 }
-.event-bodymain{
+.splide{
+  margin:0 auto;
+}
+body{
+ overflow-x: hidden;
+}
+.splide__track{
+  margin-top:250px;
+  position: absolute;
+  top:10%;
+  overflow: visible;
+}
+.splide__list{
   margin-right:10px;
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-
+ 
 }
 ul{
   padding-left: 0;
@@ -294,24 +303,24 @@ ul{
 li{
   list-style: none;
 }
-.event-bodymain-2{
-  text-align: center;
-  color: #ffffff;
-  background-color:dodgerblue;
-  width: 150px;
-  padding:10px;
-  border-radius: 50px;
-  margin-top: 15px;
-  font-weight: bold;
+.splide__slide{
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  width: 200px;
+  gap: 10px;
 }
-.event-bodymain-3{
-  margin-top: 15px;
-  font-size: large;
-  font-weight: bold;
+.event-date{
+  border-radius: 10px;
+  padding-bottom: 3px;
+  color: aliceblue;
+  text-align:center;
+  width:30%;
+  background-color:cornflowerblue;
 }
 .event-body-img{
-  width:250px;
-  border-radius:10px;
+  height:180px;
+  width:auto;
 }
 /**
  * 2.6 - 日常生活
