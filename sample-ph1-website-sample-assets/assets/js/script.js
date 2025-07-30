@@ -45,6 +45,7 @@ addEventListener('DOMContentLoaded', function(){
                         pagination:true,
                   },
                   1440:{
+                        
                         pagination:false,
                   },
                      
