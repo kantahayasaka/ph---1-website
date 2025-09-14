@@ -285,38 +285,49 @@
  .activitymain-all{
   gap: 50px;
  }
- .activity-main-2{
-  width:660px;
- }
-
- .activity{
-  height:130vh;
+ .splide{
   position:relative;
- }
+}
  .activity-main-1{
-  position: absolute;
-  top: 100px;
- }
- .MU-img{
-  display: flex;
-  width: 330px;
-  height:220px;
-  margin: 0px;
-  position: absolute;
-  margin-left:-220px;
-  margin-top:10px;
- }
- .MU-img img{
+  background-color:azure;
+  width: 60%;
+  box-shadow: 1px 1px 2px;
 
- }
- .tatemoku-img img{
-  left:20px;
-  margin-left: 0px;
- }
-  .yokomoku-img img{
-    margin-left:0px;
-    left: 450px;
-  }
+}
+.MU-img1{
+  width:32%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:-8%;
+  box-shadow:2px 2px 4px;
+}
+.activity-main-2{
+  background-color:azure;
+  width: 60%;
+  box-shadow: 1px 1px 2px;
+}
+.MU-img2{
+  width:32%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:-8%;
+  box-shadow:2px 2px 4px;
+}
+.activity-main-3{
+  background-color:azure;
+  width: 60%;
+  box-shadow: 1px 1px 2px;
+}
+.MU-img3{
+  width:32%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:-8%;
+  box-shadow:2px 2px 4px;
+}
 }
 
 

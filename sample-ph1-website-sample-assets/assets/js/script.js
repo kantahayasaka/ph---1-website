@@ -11,8 +11,7 @@ let x = document.createElement('h2');
 x.textContent = 'テスト見出し';
 x.className = "test";
 
-let y = document.getElementById('section');
-y.appendChild(x);
+
 
 const button =document.getElementById('button');
 button.addEventListener('click',function(){
@@ -32,7 +31,7 @@ window.addEventListener("scroll",function(){
             window2.classList.remove("is-scroll");
       }
 });
-addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
       new Splide('.splide',{
             type: 'loop',
             perPage: 3,
@@ -48,8 +47,15 @@ addEventListener('DOMContentLoaded', function(){
                         
                         pagination:false,
                   },
-                     
             },
+      }).mount();
+      new Splide('#slider1',{
+            type:'loop',
+            perPage:1,
+            padding:{left: 0, right:0,},
+            focus:0,
+            top:10,
+            width:1400,
       }).mount();
 });
 
