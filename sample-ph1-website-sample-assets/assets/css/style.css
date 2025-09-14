@@ -114,6 +114,7 @@ body {
  */
 .footer{
   position: relative;
+  height:10px;
 }
 .footer-box{
   display: flex;
@@ -293,10 +294,6 @@ body{
   top:10%;
   overflow: visible;
 }
-.splide__list{
-  margin-right:10px;
- 
-}
 ul{
   padding-left: 0;
 }
@@ -325,12 +322,13 @@ li{
 /**
  * 2.6 - 日常生活
  */
-.activity{
-  height:200vh;
-  position:relative;
-
+.splide{
+  height:100vh;
+  
 }
-
+.sub-splide{
+  overflow: hidden;
+}
 p:nth-of-type(2){
   color: cornflowerblue;
 }
@@ -357,48 +355,12 @@ div p:nth-of-type(2){
  display: inline-block;
  width: 980px;
  
-}
-.activity-main-1{
-  background-color:azure;
-  width:700px;
-  height:210px;
-  padding-left: 50px;
-  padding-top: 28px;
-  position: absolute;
-  top: 100px;
-}
-.activity-ul-1{
-  margin-top: 10px;
-
 
 }
-.activity-main-1 div{
-  margin-top:10px;
-  font-size: 13px;
-}
-.activity-list-1{
- display: flex;
- justify-content: center;
 
-}
-.activitymain{
-  position: relative;
-}
-
-.MU-img {
-  height: 220px;
-  position: absolute;
-  top: 50px;
-  left: 650px;
-  margin-top: 18px;
-  margin-left: 70px;
-}
-.MU-img img{
-  border-radius: 10px;
-}
 h1::before{
   content:"01";
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color:cornflowerblue;
 }
@@ -411,34 +373,16 @@ h1::before{
     background-position: center;
     background-size: contain;
 }
-.activity-list-2{
-  display:flex;
-  justify-content:center ;
-}
-.activity-main-2{
-  background-color:azure;
-  width:700px;
-  height:210px;
-  padding-left: 330px;
-  padding-top: 33px;
-  position: absolute;
-  top: 650px;
-}
+
+
+
 .activity-main-2 h1::before{
   content:"02";
   font-size: 50px;
   color:cornflowerblue;
   font-weight:bold;
 }
-.tatemoku-img img{
-  height: 220px;
-  position: absolute;
-  top: 600px;
-  left:250px;
-  margin-top: 18px;
-  margin-left: -10px;
-  border-radius: 10px;
-}
+
 .activity-main-2 li:nth-of-type(1)::before{
   content:"";
   display:inline-block;
@@ -449,35 +393,9 @@ h1::before{
   background-size: contain;
 
 }
-.activity-ul-2{
-  padding-bottom:10px;
-  padding-top: 10px;
-}
-.activity-main-2 div{
-  font-size:13px ;
-}
-.activity-list-3{
-  display: flex;
-  justify-content: center;
-}
-.activity-main-3{
-  background-color:azure;
-  width:700px;
-  height:210px;
-  padding-left: 50px;
-  padding-top: 28px;
-  position: absolute;
-  top: 980px;
-}
-.yokomoku-img img{
-  height: 220px;
-  position: absolute;
-  top: 930px;
-  margin-top: 18px;
-  margin-left: 90px;
-  border-radius: 10px;
-  
-}
+
+
+
 .activity-main-3 li::before{
  content:'';
  display:inline-block;
@@ -493,13 +411,62 @@ h1::before{
   color:cornflowerblue;
   font-weight:bold;
 }
-.activity-main-3 div{
-  font-size: 13px;
+
+.activity-main-1{
+  background-color:azure;
+  position: relative;
+  width: 500px;
+  height:180px;
+  padding:10px;
+  padding-top: 30px;
+  padding-left: 20px;
 }
-.activity-main-3{
-  row-gap: 50px;
+.MU-img1{
+  width:22%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:-14%;
 }
 
+.splide__list{
+  height:70vh;
+}
+.splide{
+  position:relative;
+}
+
+.activity-main-2{
+  left: 30%;
+  top:5%;
+  position: absolute;
+  background-color:azure;
+  width: 40%;
+  margin-right: 18% ;
+  padding:2%;
+  padding-right: 5%;
+  box-shadow: 1px 1px 2px;
+}
+.MU-img2{
+  width:22%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top:-20%;
+  box-shadow:2px 2px 4px;
+}
+.activity-main-3{
+  background-color:azure;
+  width: 45%;
+  padding:2%;
+}
+.MU-img3{
+  width: 22%;
+  height:auto;
+  position:absolute;
+  left:52%;
+  top:-20%;
+}
 /**
  * 2.7 - 公式LINE
  */
